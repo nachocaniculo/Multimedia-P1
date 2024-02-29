@@ -396,8 +396,8 @@ var levels = {
 	// Datos de nivel
 	data:[
 	 {   // Primer nivel 
-		foreground:'background',
-		background:'clouds-background',
+		foreground:'illustration',
+		background:'illustration',
 		entities:[
 			{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
 			{type:"ground", name:"elementWood020", x:185,y:390,width:30,height:80,isStatic:true},
@@ -415,8 +415,8 @@ var levels = {
 		]
 	 },
 		{   // Segundo nivel
-			foreground:'desert-foreground',
-			background:'clouds-background',
+			foreground:'illustration2',
+			background:'illustration2',
 			entities:[
 				{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
 				{type:"ground", name:"elementWood020", x:185,y:390,width:30,height:80,isStatic:true},
@@ -432,8 +432,8 @@ var levels = {
 				{type:"block", name:"elementWood020", x:720,y:192.5,width:100,height:25},	
 
 				{type:"villain", name:"ogro",x:715,y:155,calories:590},
-				{type:"villain", name:"duende",x:670,y:405,calories:420},
-				{type:"villain", name:"orco",x:765,y:400,calories:150},
+				{type:"villain", name:"orco",x:670,y:405,calories:420},
+				{type:"villain", name:"duende",x:765,y:400,calories:150},
 
 				{type:"hero", name:"knight1",x:30,y:415},
 				{type:"hero", name:"knight2",x:80,y:405},
@@ -441,55 +441,41 @@ var levels = {
 			]
 		},
 		{   // Tercer nivel
-			foreground:'desert-foreground',
-			background:'clouds-background',
+			foreground:'illustration3',
+			background:'illustration3',
 			entities:[
 				{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
-				{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
+				{type:"ground", name:"elementWood020", x:185,y:390,width:30,height:80,isStatic:true},
 	
-				{type:"block", name:"wood", x:820,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"wood", x:720,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"wood", x:620,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"glass", x:670,y:317.5,width:100,height:25},
-				{type:"block", name:"glass", x:770,y:317.5,width:100,height:25},				
+				{type:"block", name:"elementWood020", x:820,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"elementWood020", x:720,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"elementWood020", x:620,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"elementStone021", x:719,y:317.5,width:226,height:25},
+				
+				{type:"block", name:"elementWood020", x:720,y:250,angle:90,width:100,height:25},
+				{type:"block", name:"elementWood020", x:820,y:250,angle:90,width:100,height:25},
+				{type:"block", name:"elementStone021", x:770,y:190,width:110,height:25},
 
-				{type:"block", name:"glass", x:670,y:255,angle:90,width:100,height:25},
-				{type:"block", name:"glass", x:770,y:255,angle:90,width:100,height:25},
-				{type:"block", name:"wood", x:720,y:192.5,width:100,height:25},	
+				{type:"block", name:"elementWood020", x:520,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"elementWood020", x:520,y:280,angle:90,width:100,height:25},
+				{type:"block", name:"elementWood020", x:520,y:180,angle:90,width:100,height:25},
 
-				{type:"villain", name:"burger",x:715,y:155,calories:590},
-				{type:"villain", name:"fries",x:670,y:405,calories:420},
-				{type:"villain", name:"sodacan",x:765,y:400,calories:150},
+				{type:"villain", name:"orco",x:670,y:405,calories:420},
+				{type:"villain", name:"duende",x:765,y:400,calories:150},
+				{type:"villain", name:"ogro",x:765,y:280,calories:590},
+				{type:"villain", name:"duende",x:765,y:150,calories:150},
 
-				{type:"hero", name:"strawberry",x:30,y:415},
-				{type:"hero", name:"orange",x:80,y:405},
-				{type:"hero", name:"apple",x:140,y:405},
+				{type:"hero", name:"knight1",x:30,y:415},
+				{type:"hero", name:"knight2",x:80,y:405},
+				{type:"hero", name:"knight3",x:140,y:405},
 			]
 		},
 		{   // Cuarto nivel
-			foreground:'desert-foreground',
-			background:'clouds-background',
+			foreground:'illustration4',
+			background:'illustration4',
 			entities:[
 				{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
 				{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
-	
-				{type:"block", name:"wood", x:820,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"wood", x:720,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"wood", x:620,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"glass", x:670,y:317.5,width:100,height:25},
-				{type:"block", name:"glass", x:770,y:317.5,width:100,height:25},				
-
-				{type:"block", name:"glass", x:670,y:255,angle:90,width:100,height:25},
-				{type:"block", name:"glass", x:770,y:255,angle:90,width:100,height:25},
-				{type:"block", name:"wood", x:720,y:192.5,width:100,height:25},	
-
-				{type:"villain", name:"burger",x:715,y:155,calories:590},
-				{type:"villain", name:"fries",x:670,y:405,calories:420},
-				{type:"villain", name:"sodacan",x:765,y:400,calories:150},
-
-				{type:"hero", name:"strawberry",x:30,y:415},
-				{type:"hero", name:"orange",x:80,y:405},
-				{type:"hero", name:"apple",x:140,y:405},
 			]
 		}
 	],
@@ -546,17 +532,10 @@ var levels = {
 
 var entities = {
 	definitions:{
-		"glass":{
-			fullHealth:100,
-			density:2.4,
-			friction:0.4,
-			restitution:0.15,
-		},
-		"wood":{
-			fullHealth:500,
-			density:0.7,
-			friction:0.4,
-			restitution:0.4,
+		"dirt":{
+			density:3.0,
+			friction:1.5,
+			restitution:0.2,	
 		},
 		"elementWood020":{
 			fullHealth:500,
@@ -569,58 +548,6 @@ var entities = {
 			density:2.4,
 			friction:0.4,
 			restitution:0.15,
-		},
-		"dirt":{
-			density:3.0,
-			friction:1.5,
-			restitution:0.2,	
-		},
-		"burger":{
-			shape:"circle",
-			fullHealth:40,
-			radius:25,
-			density:1,
-			friction:0.5,
-			restitution:0.4,	
-		},
-		"sodacan":{
-			shape:"rectangle",
-			fullHealth:80,
-			width:40,
-			height:60,
-			density:1,
-			friction:0.5,
-			restitution:0.7,	
-		},
-		"fries":{
-			shape:"rectangle",
-			fullHealth:50,
-			width:40,
-			height:50,
-			density:1,
-			friction:0.5,
-			restitution:0.6,	
-		},
-		"apple":{
-			shape:"circle",
-			radius:25,
-			density:1.5,
-			friction:0.5,
-			restitution:0.4,	
-		},
-		"orange":{
-			shape:"circle",
-			radius:25,
-			density:1.5,
-			friction:0.5,
-			restitution:0.4,	
-		},
-		"strawberry":{
-			shape:"circle",
-			radius:15,
-			density:2.0,
-			friction:0.5,
-			restitution:0.4,	
 		},
 		"ogro":{
 			shape:"rectangle",
