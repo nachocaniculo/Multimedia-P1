@@ -51,13 +51,13 @@ var game = {
 	
 		//"Kindergarten" by Gurdonark
 		//http://ccmixter.org/files/gurdonark/26491 is licensed under a Creative Commons license
-		game.backgroundMusic = loader.loadSound('audio/gurdonark-kindergarten');
+		game.backgroundMusic = loader.loadSound('audio/battlemusic');
 
-		game.slingshotReleasedSound = loader.loadSound("audio/released");
-		game.bounceSound = loader.loadSound('audio/bounce');
+		game.slingshotReleasedSound = loader.loadSound("audio/tirachinas");
+		game.bounceSound = loader.loadSound('audio/hitsound');
 		game.breakSound = {
-			"glass":loader.loadSound('audio/glassbreak'),
-			"wood":loader.loadSound('audio/woodbreak')
+			"stone":loader.loadSound('audio/stonebreaknew'),
+			"wood":loader.loadSound('audio/woodbreaknew')
 		};
 
 
@@ -400,14 +400,14 @@ var levels = {
 		background:'illustration',
 		entities:[
 			{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
-			{type:"ground", name:"elementWood020", x:185,y:390,width:30,height:80,isStatic:true},
+			{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
 
-			{type:"block", name:"elementWood020", x:520,y:380,angle:90,width:100,height:25},
-			{type:"block", name:"elementStone021", x:520,y:280,angle:90,width:100,height:25},								
+			{type:"block", name:"wood", x:520,y:380,angle:90,width:100,height:25},
+			{type:"block", name:"stone", x:520,y:280,angle:90,width:100,height:25},								
 			{type:"villain", name:"ogro",x:520,y:205,calories:590},
 
-			{type:"block", name:"elementWood020", x:620,y:380,angle:90,width:100,height:25},
-			{type:"block", name:"elementStone021", x:620,y:280,angle:90,width:100,height:25},								
+			{type:"block", name:"wood", x:620,y:380,angle:90,width:100,height:25},
+			{type:"block", name:"stone", x:620,y:280,angle:90,width:100,height:25},								
 			{type:"villain", name:"orco", x:620,y:205,calories:420},				
 
 			{type:"hero", name:"knight1",x:80,y:405},
@@ -419,17 +419,17 @@ var levels = {
 			background:'illustration2',
 			entities:[
 				{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
-				{type:"ground", name:"elementWood020", x:185,y:390,width:30,height:80,isStatic:true},
+				{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
 	
-				{type:"block", name:"elementWood020", x:820,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"elementWood020", x:720,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"elementWood020", x:620,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"elementStone021", x:670,y:317.5,width:100,height:25},
-				{type:"block", name:"elementStone021", x:770,y:317.5,width:100,height:25},				
+				{type:"block", name:"wood", x:820,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:720,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:620,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"stone", x:670,y:317.5,width:100,height:25},
+				{type:"block", name:"stone", x:770,y:317.5,width:100,height:25},				
 
-				{type:"block", name:"elementStone021", x:670,y:255,angle:90,width:100,height:25},
-				{type:"block", name:"elementStone021", x:770,y:255,angle:90,width:100,height:25},
-				{type:"block", name:"elementWood020", x:720,y:192.5,width:100,height:25},	
+				{type:"block", name:"stone", x:670,y:255,angle:90,width:100,height:25},
+				{type:"block", name:"stone", x:770,y:255,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:720,y:192.5,width:100,height:25},	
 
 				{type:"villain", name:"ogro",x:715,y:155,calories:590},
 				{type:"villain", name:"orco",x:670,y:405,calories:420},
@@ -445,20 +445,20 @@ var levels = {
 			background:'illustration3',
 			entities:[
 				{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
-				{type:"ground", name:"elementWood020", x:185,y:390,width:30,height:80,isStatic:true},
+				{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
 	
-				{type:"block", name:"elementWood020", x:820,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"elementWood020", x:720,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"elementWood020", x:620,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"elementStone021", x:719,y:317.5,width:226,height:25},
+				{type:"block", name:"wood", x:820,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:720,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:620,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"stone", x:719,y:317.5,width:226,height:25},
 				
-				{type:"block", name:"elementWood020", x:720,y:250,angle:90,width:100,height:25},
-				{type:"block", name:"elementWood020", x:820,y:250,angle:90,width:100,height:25},
-				{type:"block", name:"elementStone021", x:770,y:190,width:110,height:25},
+				{type:"block", name:"wood", x:720,y:250,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:820,y:250,angle:90,width:100,height:25},
+				{type:"block", name:"stone", x:770,y:190,width:110,height:25},
 
-				{type:"block", name:"elementWood020", x:520,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"elementWood020", x:520,y:280,angle:90,width:100,height:25},
-				{type:"block", name:"elementWood020", x:520,y:180,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:520,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:520,y:280,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:520,y:180,angle:90,width:100,height:25},
 
 				{type:"villain", name:"orco",x:670,y:405,calories:420},
 				{type:"villain", name:"duende",x:765,y:400,calories:150},
@@ -476,6 +476,59 @@ var levels = {
 			entities:[
 				{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
 				{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
+
+				{type:"block", name:"wood", x:520,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:620,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:520,y:320,width:100,height:25},
+				{type:"block", name:"wood", x:620,y:320,width:100,height:25},
+				{type:"block", name:"stone", x:720,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"stone", x:720,y:320,width:100,height:25},
+				{type:"block", name:"stone", x:570,y:300,width:100,height:25},
+				{type:"block", name:"wood", x:670,y:300,width:100,height:25},
+				{type:"block", name:"wood", x:570,y:240,angle:90,width:100,height:25},
+				{type:"block", name:"stone", x:670,y:240,angle:90,width:100,height:25},
+				{type:"block", name:"stone", x:620,y:180,width:100,height:25},
+
+				{type:"villain", name:"ogro",x:570,y:380,calories:590},
+				{type:"villain", name:"orco",x:670,y:405,calories:420},
+				{type:"villain", name:"ogro",x:620,y:270,calories:590},
+				{type:"villain", name:"duende",x:490,y:280,calories:150},
+				{type:"villain", name:"duende",x:730,y:280,calories:150},
+
+				{type:"hero", name:"knight1",x:30,y:415},
+				{type:"hero", name:"knight2",x:80,y:405},
+				{type:"hero", name:"knight3",x:140,y:405},
+				{type:"hero", name:"knight2",x:-50,y:405},
+			]
+		},
+		{   // Quinto nivel
+			foreground:'illustration5',
+			background:'illustration5',
+			entities:[
+				{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
+				{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
+
+				{type:"block", name:"wood", x:520,y:420,width:100,height:25},
+				{type:"block", name:"wood", x:620,y:420,width:100,height:25},
+				{type:"block", name:"wood", x:720,y:420,width:100,height:25},
+				{type:"block", name:"stone", x:570,y:380,width:100,height:25},
+				{type:"block", name:"stone", x:670,y:380,width:100,height:25},
+				{type:"block", name:"wood", x:620,y:360,width:100,height:25},
+
+				{type:"block", name:"wood", x:820,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:920,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"stone", x:870,y:320,width:100,height:25},
+
+				{type:"villain", name:"duende",x:620,y:340,calories:150},
+				{type:"villain", name:"ogro",x:500,y:380,calories:590},
+				{type:"villain", name:"ogro",x:720,y:380,calories:590},
+				{type:"villain", name:"orco",x:870,y:405,calories:420},
+				{type:"villain", name:"orco",x:870,y:305,calories:420},
+
+				{type:"hero", name:"knight1",x:30,y:415},
+				{type:"hero", name:"knight2",x:80,y:405},
+				{type:"hero", name:"knight3",x:140,y:405},
+				{type:"hero", name:"knight2",x:-50,y:405},
 			]
 		}
 	],
@@ -537,13 +590,13 @@ var entities = {
 			friction:1.5,
 			restitution:0.2,	
 		},
-		"elementWood020":{
+		"wood":{
 			fullHealth:500,
 			density:0.7,
 			friction:0.4,
 			restitution:0.4,
 		},
-		"elementStone021":{
+		"stone":{
 			fullHealth:100,
 			density:2.4,
 			friction:0.4,
