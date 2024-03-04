@@ -134,6 +134,8 @@ var game = {
 	offsetLeft:0,
 	// La puntuación del juego
 	score:0,
+	//Enemigos restantes
+	enemiesCount:0,
 
 	//Despliegue la pantalla para centrarse en newCenter
 	panTo:function(newCenter){
@@ -345,6 +347,8 @@ var game = {
 					if (entity.type=="villain"){
 						game.score += entity.calories;
 						$('#score').html('Score: '+game.score);
+						game.enemiesCount += 1;
+						$('#enemies').html('Kills: '+game.enemiesCount);
 					}
 					if (entity.breakSound){
 						entity.breakSound.play();
@@ -549,7 +553,7 @@ var levels = {
 		});
 	},
 
-	   // Cargar todos los datos e imágenes para un nivel específico
+	// Cargar todos los datos e imágenes para un nivel específico
 	load:function(number){
 	   //Inicializar box2d world cada vez que se carga un nivel
 		box2d.init();
@@ -601,6 +605,12 @@ var entities = {
 			density:2.4,
 			friction:0.4,
 			restitution:0.15,
+		},
+		"brickwall":{
+			fullHealth: Infinity,
+			density: 1000,
+			friction: 1000,
+			restitution: 0.15
 		},
 		"ogro":{
 			shape:"rectangle",
