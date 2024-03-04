@@ -53,7 +53,7 @@ var game = {
 		//http://ccmixter.org/files/gurdonark/26491 is licensed under a Creative Commons license
 		game.backgroundMusic = loader.loadSound('audio/battlemusic');
 
-		game.slingshotReleasedSound = loader.loadSound("audio/tirachinas");
+		game.slingshotReleasedSound = loader.loadSound("audio/slingshot");
 		game.bounceSound = loader.loadSound('audio/hitsound');
 		game.breakSound = {
 			"stone":loader.loadSound('audio/stonebreaknew'),
@@ -408,11 +408,11 @@ var levels = {
 
 			{type:"block", name:"wood", x:520,y:380,angle:90,width:100,height:25},
 			{type:"block", name:"stone", x:520,y:280,angle:90,width:100,height:25},								
-			{type:"villain", name:"ogro",x:520,y:205,calories:590},
+			{type:"villain", name:"ogre",x:520,y:205,calories:590},
 
 			{type:"block", name:"wood", x:620,y:380,angle:90,width:100,height:25},
 			{type:"block", name:"stone", x:620,y:280,angle:90,width:100,height:25},								
-			{type:"villain", name:"orco", x:620,y:205,calories:420},				
+			{type:"villain", name:"orc", x:620,y:205,calories:420},				
 
 			{type:"hero", name:"knight1",x:80,y:405},
 			{type:"hero", name:"knight2",x:140,y:405},
@@ -435,9 +435,9 @@ var levels = {
 				{type:"block", name:"stone", x:770,y:255,angle:90,width:100,height:25},
 				{type:"block", name:"wood", x:720,y:192.5,width:100,height:25},	
 
-				{type:"villain", name:"ogro",x:715,y:155,calories:590},
-				{type:"villain", name:"orco",x:670,y:405,calories:420},
-				{type:"villain", name:"duende",x:765,y:400,calories:150},
+				{type:"villain", name:"ogre",x:715,y:155,calories:590},
+				{type:"villain", name:"orc",x:670,y:405,calories:420},
+				{type:"villain", name:"elf",x:765,y:400,calories:150},
 
 				{type:"hero", name:"knight1",x:30,y:415},
 				{type:"hero", name:"knight2",x:80,y:405},
@@ -464,10 +464,10 @@ var levels = {
 				{type:"block", name:"wood", x:520,y:280,angle:90,width:100,height:25},
 				{type:"block", name:"wood", x:520,y:180,angle:90,width:100,height:25},
 
-				{type:"villain", name:"orco",x:670,y:405,calories:420},
-				{type:"villain", name:"duende",x:765,y:400,calories:150},
-				{type:"villain", name:"ogro",x:765,y:280,calories:590},
-				{type:"villain", name:"duende",x:765,y:150,calories:150},
+				{type:"villain", name:"orc",x:670,y:405,calories:420},
+				{type:"villain", name:"elf",x:765,y:400,calories:150},
+				{type:"villain", name:"ogre",x:765,y:280,calories:590},
+				{type:"villain", name:"elf",x:765,y:150,calories:150},
 
 				{type:"hero", name:"knight1",x:30,y:415},
 				{type:"hero", name:"knight2",x:80,y:405},
@@ -493,11 +493,11 @@ var levels = {
 				{type:"block", name:"stone", x:670,y:240,angle:90,width:100,height:25},
 				{type:"block", name:"stone", x:620,y:180,width:100,height:25},
 
-				{type:"villain", name:"ogro",x:570,y:380,calories:590},
-				{type:"villain", name:"orco",x:670,y:405,calories:420},
-				{type:"villain", name:"ogro",x:620,y:270,calories:590},
-				{type:"villain", name:"duende",x:490,y:280,calories:150},
-				{type:"villain", name:"duende",x:730,y:280,calories:150},
+				{type:"villain", name:"ogre",x:570,y:380,calories:590},
+				{type:"villain", name:"orc",x:670,y:405,calories:420},
+				{type:"villain", name:"ogre",x:620,y:270,calories:590},
+				{type:"villain", name:"elf",x:490,y:280,calories:150},
+				{type:"villain", name:"elf",x:730,y:280,calories:150},
 
 				{type:"hero", name:"knight1",x:30,y:415},
 				{type:"hero", name:"knight2",x:80,y:405},
@@ -512,6 +512,8 @@ var levels = {
 				{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
 				{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
 
+				{type:"block", name:"metal", x:420,y:400,angle:90,width:100,height:25},
+
 				{type:"block", name:"wood", x:520,y:420,width:100,height:25},
 				{type:"block", name:"wood", x:620,y:420,width:100,height:25},
 				{type:"block", name:"wood", x:720,y:420,width:100,height:25},
@@ -523,11 +525,11 @@ var levels = {
 				{type:"block", name:"wood", x:920,y:380,angle:90,width:100,height:25},
 				{type:"block", name:"stone", x:870,y:320,width:100,height:25},
 
-				{type:"villain", name:"duende",x:620,y:340,calories:150},
-				{type:"villain", name:"ogro",x:500,y:380,calories:590},
-				{type:"villain", name:"ogro",x:720,y:380,calories:590},
-				{type:"villain", name:"orco",x:870,y:405,calories:420},
-				{type:"villain", name:"orco",x:870,y:305,calories:420},
+				{type:"villain", name:"elf",x:620,y:340,calories:150},
+				{type:"villain", name:"ogre",x:500,y:380,calories:590},
+				{type:"villain", name:"ogre",x:720,y:380,calories:590},
+				{type:"villain", name:"orc",x:870,y:405,calories:420},
+				{type:"villain", name:"orc",x:870,y:305,calories:420},
 
 				{type:"hero", name:"knight1",x:30,y:415},
 				{type:"hero", name:"knight2",x:80,y:405},
@@ -606,13 +608,13 @@ var entities = {
 			friction:0.4,
 			restitution:0.15,
 		},
-		"brickwall":{
+		"metal":{
 			fullHealth: Infinity,
 			density: 1000,
 			friction: 1000,
 			restitution: 0.15
 		},
-		"ogro":{
+		"ogre":{
 			shape:"rectangle",
 			fullHealth:50,
 			width:50,
@@ -621,7 +623,7 @@ var entities = {
 			friction:0.5,
 			restitution:0.6,
 		},
-		"orco":{
+		"orc":{
 			shape:"rectangle",
 			fullHealth:50,
 			width:50,
@@ -630,7 +632,7 @@ var entities = {
 			friction:0.5,
 			restitution:0.6,	
 		},
-		"duende":{
+		"elf":{
 			shape:"rectangle",
 			fullHealth:50,
 			width:50,
