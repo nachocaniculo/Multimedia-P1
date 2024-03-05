@@ -54,42 +54,32 @@
 	font:12px Arial;
 }
 
-#scorescreen {
-    height: 60px;
+/* Pantalla de puntuación */
+#scorescreen  {
+    height:60px;
     font: 32px Comic Sans MS;
     text-shadow: 0 0 2px #000;
-    color: white;
-    position: relative; /* Agrega posición relativa para alinear los elementos internos */
+	color:white;
 }
 
-#scorescreen img {
-    opacity: 0.6;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding-left: 10px;
-    cursor: pointer;
+#scorescreen img{
+    opacity:0.6;
+    top:10px;
+    position:relative;
+    padding-left:10px;
+    cursor:pointer;
 }
 
-#togglemusic {
-    left: 80px; /* Ajusta la posición del botón de música */
+#scorescreen #score {
+	position:absolute;
+	top:5px;
+	right:20px;
 }
 
-#score,
-#enemies {
-    position: absolute;
-    top: 0;
-}
-
-#score {
-    right: 20px; /* Ajusta la posición del marcador de puntuación */ 
-    top: 5px; 
-}
-
-#enemies {
-    right: 20px; /* Ajusta la posición del contador de enemigos */
-    top: 40px; /* Elimina la posición superior para que se ajuste automáticamente debajo del marcador de puntuación */
-    bottom: 0; /* Coloca el contador de enemigos al fondo */
+#scorescreen #enemies {
+	position:absolute;
+	top:40px;
+	right:20px;
 }
 
 /* Pantalla de finalización */

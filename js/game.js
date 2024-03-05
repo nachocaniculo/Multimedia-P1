@@ -502,7 +502,6 @@ var levels = {
 				{type:"hero", name:"knight1",x:30,y:415},
 				{type:"hero", name:"knight2",x:80,y:405},
 				{type:"hero", name:"knight3",x:140,y:405},
-				{type:"hero", name:"knight2",x:-50,y:405},
 			]
 		},
 		{   // Quinto nivel
@@ -534,7 +533,6 @@ var levels = {
 				{type:"hero", name:"knight1",x:30,y:415},
 				{type:"hero", name:"knight2",x:80,y:405},
 				{type:"hero", name:"knight3",x:140,y:405},
-				{type:"hero", name:"knight2",x:-50,y:405},
 			]
 		}
 	],
